@@ -150,7 +150,7 @@ static int parse_combine_filter(
 	int result = 0;
 
 	if (!subspecs[0]) {
-		strbuf_addf(errbuf,
+		strbuf_addstr(errbuf,
 			    _("expected something after combine:"));
 		result = 1;
 		goto cleanup;
